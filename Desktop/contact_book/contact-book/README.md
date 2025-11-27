@@ -1,16 +1,12 @@
-# React + Vite
+Основные возможности: 
+1.Все добавленные контакты отображаются в виде упорядоченного списка 
+2.С помощью формы ввода пользователь может добавить новую запись, указав имя и номер телефона 
+3.Каждый контакт в списке имеет кнопку для его удаления 4.Форма добавления проверяет, что оба поля заполнены
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Особенности реализации: состояние списка контактов управляется с помощью хука useState; используются два эффекта useEffect: загрузка контактов из LocalStorage, сохранение контактов при каждом изменении состояния; реализованы обработчики для отправки формы, удаления контактов
 
-Currently, two official plugins are available:
+В ходе выполнения контрольной работы были успешно применены такие концепции React: Компонентный подход, работа с состоянием, архитектура приложения, обработка событий, работа с данными
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img width="541" height="607" alt="image" src="https://github.com/user-attachments/assets/649677cd-3522-49af-8bb4-395cda023474" />
+<img width="521" height="559" alt="image" src="https://github.com/user-attachments/assets/1e2986e9-ccd8-414f-b8a0-947a9d854f72" />
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
